@@ -1,4 +1,4 @@
-# hitos_iv
+# Hitos IV
 
 <!-- TOC depthFrom:2 depthTo:6 withLinks:1 updateOnSave:1 orderedList:1 -->
 
@@ -13,6 +13,8 @@
 Pequeña biblioteca en python que lee los JSON de los hitos de IV.
 
 ## Enlaces
+
+[Repositorio de ejercicios](https://github.com/lulivi/autoevaluacion-IV)
 
 ## Licencia
 
