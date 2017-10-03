@@ -13,3 +13,8 @@ def read_json(json_file='hitos.json'):
     except Exception as e:
         raise
     return milestone_dict
+
+
+def milestone_number(milestone_dict):
+    """Carga JSON file into a dictionary."""
+    return len(milestone_dict['hitos'])
