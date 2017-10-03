@@ -18,3 +18,13 @@ def read_json(json_file='hitos.json'):
 def milestone_number(milestone_dict):
     """Carga JSON file into a dictionary."""
     return len(milestone_dict['hitos'])
+
+
+def get_milestone(milestone_dict, milestone_id):
+    """Devuelve un hito en concreto."""
+    try:
+        milestone = {}
+        milestone = milestone_dict['hitos'][milestone_id]
+    except Exception as e:
+        raise
+    return milestone
