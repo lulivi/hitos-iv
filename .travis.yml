@@ -4,4 +4,4 @@ python:
 cache: pip
 install: true
 script:
-  - pytest
+  - cd ./tests/ && pytest
