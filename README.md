@@ -1,21 +1,29 @@
 # Hitos IV
 
-<!-- TOC depthFrom:2 depthTo:6 withLinks:1 updateOnSave:1 orderedList:1 -->
+## TOC
 
-1. [Descripción](#descripcin)
-2. [Enlaces](#enlaces)
-3. [Licencia](#licencia)
+<!-- TOC depthFrom:3 depthTo:6 withLinks:1 updateOnSave:1 orderedList:1 -->
+
+1. [Test](#test)
+2. [Descripción](#descripcin)
+3. [Enlaces](#enlaces)
+4. [Licencia](#licencia)
 
 <!-- /TOC -->
 
-## Descripción
+### Test
+
+[![Build Status](https://travis-ci.org/lulivi/hitos-iv.svg?branch=master)](https://travis-ci.org/lulivi/hitos-iv)
+
+
+### Descripción
 
 Pequeña biblioteca en python que lee los JSON de los hitos de IV.
 
-## Enlaces
+### Enlaces
 
 [Repositorio de ejercicios](https://github.com/lulivi/autoevaluacion-IV)
 
-## Licencia
+### Licencia
 
 Echa un vistazo a la [**licencia**](https://github.com/lulivi/hitos_iv/blob/master/LICENSE)
