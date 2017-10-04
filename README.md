@@ -2,10 +2,10 @@
 
 ## TOC
 
-<!-- TOC depthFrom:3 depthTo:6 withLinks:1 updateOnSave:1 orderedList:1 -->
+<!-- TOC depthFrom:3 depthTo:6 withLinks:1 updateOnSave:0 orderedList:1 -->
 
 1. [Test](#test)
-2. [Descripción](#descripcin)
+2. [Descripción](#descripción)
 3. [Enlaces](#enlaces)
 4. [Licencia](#licencia)
 
