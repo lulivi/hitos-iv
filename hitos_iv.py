@@ -1,8 +1,7 @@
 #!/usr/bin/env python
-"""
-Hitos IV
----
 
+# === Módulo Hitos IV ===
+"""
 Modulo para manejar el archivo JSON de los hitos.
 
 **Functions:**
@@ -12,7 +11,7 @@ Modulo para manejar el archivo JSON de los hitos.
 * get_milestone
 """
 
-
+# imports externos
 import json
 
 
