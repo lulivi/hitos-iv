@@ -1,27 +1,77 @@
 #!/usr/bin/env python
-"""Modulo de funciones para manejar el archivo JSON de los hitos."""
+"""
+Hitos IV
+---
+
+Modulo para manejar el archivo JSON de los hitos.
+
+**Functions:**
+
+* read_json
+* milestone_number
+* get_milestone
+"""
+
 
 import json
 
 
+# === Lectura ===
+
 def read_json(json_file='hitos.json'):
-    """Devuelve un diccionario con el archivo JSON."""
+    """
+    Guarda en un diccionario el arhcivo JSON que le pasamos como parametro.
+
+    **Args:**
+
+    * json_file - El nombre (ruta) del archivo JSON que va a leer (default
+        'hitos.json').
+
+    **Returns:**
+
+    * Un diccionario en el que se guarda el archivo JSON.
+    """
     try:
         milestone_dict = {}
         with open(json_file, 'r') as f:
             milestone_dict = json.loads(f.read())
-    except Exception as e:
+    except IOError as e:
         raise
     return milestone_dict
 
 
+# === Número de milestones ===
+
 def milestone_number(milestone_dict):
-    """Carga JSON file into a dictionary."""
+    """
+    Comprueba el número de milestones que hay.
+
+    **Args:**
+
+    * milestone_dict - Diccionario con los milestones.
+
+    **Returns:**
+
+    * Número de milestones del proyecto
+    """
     return len(milestone_dict['hitos'])
 
 
+# === Obtención de milestones ===
+
 def get_milestone(milestone_dict, milestone_id):
-    """Devuelve un hito en concreto."""
+    """
+    Obtiene un milestones a través de su id.
+
+    **Args:**
+
+    * milestone_dict - Diccionario con los milestones.
+    * milestone_id - ID del milestones que queremos obtener
+
+    **Returns:**
+
+    * Un diccionario con el milestone indicado.
+    """
     try:
         milestone = {}
         milestone = milestone_dict['hitos'][milestone_id]
