@@ -1,10 +1,24 @@
 #!/usr/bin/env python
 
-"""Módulo de tests para el módulo hitos_iv."""
+# === Test del módulo Hitos IV ===
+"""
+Modulo para testear el archivo JSON de los hitos.
 
+**Functions:**
+
+* test_read_json
+* test_milestone_number
+* test_get_milestone
+"""
+
+# imports externos
 import unittest
+
+# imports locales
 import __init__
 import hitos_iv
+
+# === Clase test ===
 
 
 class HitosIvTest(unittest.TestCase):
