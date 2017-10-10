@@ -7,7 +7,7 @@ with open("README.md", 'r') as f:
     long_description = f.read()
 
 setup(
-   name='hitos-IV',
+   name='hitos-iv',
    version='0.2',
    description='A JSON reader module',
    license="GPLv3",
