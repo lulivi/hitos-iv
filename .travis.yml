@@ -3,6 +3,7 @@ python:
   - "3.6"
 cache: pip
 before_install:
+  - pip install setuptools
   - python setup.py -q install
 script:
   - cd ./hitos-iv/test/ && pytest
