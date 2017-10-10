@@ -27,17 +27,17 @@ class HitosIvTest(unittest.TestCase):
     def test_read_json(self):
         """Comprueba si lee correctamente el fichero."""
         self.assertFalse(
-            hitos_iv.read_json('../hitos.json') == {}, 'Diccionario no vacío')
+            hitos_iv.read_json('../data/hitos.json') == {}, 'Diccionario no vacío')
 
     def test_milestone_number(self):
         """Comprueba si el numero de milestones es correcto."""
-        mil_dict = hitos_iv.read_json('../hitos.json')
+        mil_dict = hitos_iv.read_json('../data/hitos.json')
         self.assertEqual(
             hitos_iv.milestone_number(mil_dict), 2, 'Número correcto de hitos')
 
     def test_get_milestone(self):
         """Comprueba si devuelve un objeto milestone correcto."""
-        mil_dict = hitos_iv.read_json('../hitos.json')
+        mil_dict = hitos_iv.read_json('../data/hitos.json')
         self.assertFalse(
             hitos_iv.get_milestone(mil_dict, 0) == {}, 'Hito no vacío')
         self.assertFalse(
