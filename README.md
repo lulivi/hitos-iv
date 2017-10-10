@@ -26,4 +26,4 @@ Pequeña biblioteca en python que lee los JSON de los hitos de IV.
 
 ### Licencia
 
-Echa un vistazo a la [**licencia**](https://github.com/lulivi/hitos_iv/blob/master/LICENSE)
+[![license](https://img.shields.io/github/license/lulivi/hitos-iv.svg?style=plastic)](https://github.com/lulivi/hitos-iv/blob/master/LICENSE)
