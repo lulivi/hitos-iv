@@ -15,6 +15,5 @@ setup(
    author='Luis Liñán',
    author_email='luislivilla@gmail.com',
    url="https://github.com/lulivi/hitos-iv",
-   packages=['hitos-iv'],
    install_requires=['unittest', 'json'],
 )
