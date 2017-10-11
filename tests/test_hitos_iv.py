@@ -15,7 +15,7 @@ Modulo para testear el archivo JSON de los hitos.
 import unittest
 
 # imports locales
-import __init__
+import __init__ as init
 import hitos_iv
 
 # === Clase test ===
@@ -24,20 +24,23 @@ import hitos_iv
 class HitosIvTest(unittest.TestCase):
     """Clase para testing del modulo hitos_iv."""
 
+    __json_file_path = '../data/hitos.json'
+
     def test_read_json(self):
         """Comprueba si lee correctamente el fichero."""
         self.assertFalse(
-            hitos_iv.read_json('../data/hitos.json') == {}, 'Diccionario no vacío')
+            hitos_iv.read_json(self.__json_file_path) == {},
+            'Diccionario no vacío')
 
     def test_milestone_number(self):
         """Comprueba si el numero de milestones es correcto."""
-        mil_dict = hitos_iv.read_json('../data/hitos.json')
+        mil_dict = hitos_iv.read_json(self.__json_file_path)
         self.assertEqual(
             hitos_iv.milestone_number(mil_dict), 2, 'Número correcto de hitos')
 
     def test_get_milestone(self):
         """Comprueba si devuelve un objeto milestone correcto."""
-        mil_dict = hitos_iv.read_json('../data/hitos.json')
+        mil_dict = hitos_iv.read_json(self.__json_file_path)
         self.assertFalse(
             hitos_iv.get_milestone(mil_dict, 0) == {}, 'Hito no vacío')
         self.assertFalse(

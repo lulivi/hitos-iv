@@ -6,4 +6,4 @@ cache: pip
 install:
   - python setup.py -q install
 script:
-  - cd ./hitos-iv/test/ && pytest
+  - cd ./tests/ && pytest

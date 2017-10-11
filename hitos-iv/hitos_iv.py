@@ -17,7 +17,7 @@ import json
 
 # === Lectura ===
 
-def read_json(json_file='./data/hitos.json'):
+def read_json(json_file=''):
     """
     Guarda en un diccionario el arhcivo JSON que le pasamos como parametro.
 
