@@ -18,9 +18,10 @@ import unittest
 import __init__ as init
 import hitos_iv
 
+assert init
+
+
 # === Clase test ===
-
-
 class HitosIvTest(unittest.TestCase):
     """Clase para testing del modulo hitos_iv."""
 
