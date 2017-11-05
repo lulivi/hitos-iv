@@ -1,5 +1,7 @@
 """Help tests to find modules to test."""
 
 import sys
+import os
 
-sys.path.append('../hitos_iv/')
+myPath = os.path.dirname(os.path.abspath(__file__))
+sys.path.insert(0, myPath + '/../hitos_iv')
