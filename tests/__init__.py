@@ -2,4 +2,4 @@
 
 import sys
 
-sys.path.append('../hitos-iv/')
+sys.path.append('../hitos_iv/')
