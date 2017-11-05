@@ -8,7 +8,7 @@ with open("README.md", 'r') as f:
     long_description = f.read()
 
 # requirements
-requirements = ['pocha']
+requirements = ['pocha', 'hug']
 
 setup(
     name='hitos-iv',
