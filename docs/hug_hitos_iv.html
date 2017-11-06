@@ -23,7 +23,8 @@
       <div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">hug</span>
 <span class="kn">import</span> <span class="nn">hitos_iv</span>
 
-<span class="n">json_path</span> <span class="o">=</span> <span class="s1">&#39;../data/hitos.json&#39;</span></pre></div>
+<span class="n">json_path</span> <span class="o">=</span> <span class="s1">&#39;../data/hitos.json&#39;</span>
+<span class="n">hitos_iv_json</span> <span class="o">=</span> <span class="n">hitos_iv</span><span class="o">.</span><span class="n">read_json</span><span class="p">(</span><span class="n">json_path</span><span class="p">)</span></pre></div>
     </div>
   </div>
   <div class='clearall'></div>
@@ -32,7 +33,8 @@
       <div class='octowrap'>
         <a class='octothorpe' href='#section-1'>#</a>
       </div>
-      <p>Retunr web status.</p>
+      <p>=== Get <code>/</code> ===
+Retunr web status.</p>
     </div>
     <div class='code'>
       <div class="highlight"><pre><span class="nd">@hug.get</span><span class="p">(</span><span class="s1">&#39;/&#39;</span><span class="p">)</span>
@@ -57,7 +59,8 @@
       <div class='octowrap'>
         <a class='octothorpe' href='#section-3'>#</a>
       </div>
-      <p>Return all milestones.</p>
+      <p>=== Get <code>/all</code> ===
+Return all milestones.</p>
     </div>
     <div class='code'>
       <div class="highlight"><pre><span class="nd">@hug.get</span><span class="p">(</span><span class="s1">&#39;/all&#39;</span><span class="p">)</span>
@@ -82,7 +85,8 @@
       <div class='octowrap'>
         <a class='octothorpe' href='#section-5'>#</a>
       </div>
-      <p>Return all milestones.</p>
+      <p>=== Get <code>/number</code> ===
+Return all milestones.</p>
     </div>
     <div class='code'>
       <div class="highlight"><pre><span class="nd">@hug.get</span><span class="p">(</span><span class="s1">&#39;/number&#39;</span><span class="p">)</span>
@@ -98,8 +102,7 @@
       
     </div>
     <div class='code'>
-      <div class="highlight"><pre>    <span class="n">milestones</span> <span class="o">=</span> <span class="n">hitos_iv</span><span class="o">.</span><span class="n">read_json</span><span class="p">(</span><span class="n">json_path</span><span class="p">)</span>
-    <span class="k">return</span> <span class="n">hitos_iv</span><span class="o">.</span><span class="n">milestone_number</span><span class="p">(</span><span class="n">milestones</span><span class="p">)</span></pre></div>
+      <div class="highlight"><pre>    <span class="k">return</span> <span class="n">hitos_iv</span><span class="o">.</span><span class="n">milestone_number</span><span class="p">(</span><span class="n">hitos_iv_json</span><span class="p">)</span></pre></div>
     </div>
   </div>
   <div class='clearall'></div>
@@ -108,7 +111,8 @@
       <div class='octowrap'>
         <a class='octothorpe' href='#section-7'>#</a>
       </div>
-      <p>Return one milestone.</p>
+      <p>=== Get <code>/get/{id}</code> ===
+Return one milestone.</p>
     </div>
     <div class='code'>
       <div class="highlight"><pre><span class="nd">@hug.get</span><span class="p">(</span><span class="s1">&#39;/get/{id}&#39;</span><span class="p">)</span>
@@ -124,8 +128,7 @@
       
     </div>
     <div class='code'>
-      <div class="highlight"><pre>    <span class="n">milestones</span> <span class="o">=</span> <span class="n">hitos_iv</span><span class="o">.</span><span class="n">read_json</span><span class="p">(</span><span class="n">json_path</span><span class="p">)</span>
-    <span class="k">return</span> <span class="n">hitos_iv</span><span class="o">.</span><span class="n">get_milestone</span><span class="p">(</span><span class="n">milestones</span><span class="p">,</span> <span class="nb">id</span><span class="p">)</span>
+      <div class="highlight"><pre>    <span class="k">return</span> <span class="n">hitos_iv</span><span class="o">.</span><span class="n">get_milestone</span><span class="p">(</span><span class="n">hitos_iv_json</span><span class="p">,</span> <span class="nb">id</span><span class="p">)</span>
 
 </pre></div>
     </div>
