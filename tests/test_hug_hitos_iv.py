@@ -4,11 +4,12 @@
 """
 Modulo para testear el archivo JSON de los hitos.
 
-**Functions:**
+Functions:
 
-* test_read_json
+* test_index
+* test_get_all
 * test_milestone_number
-* test_get_milestone
+* test_get_one
 """
 
 # imports externos
@@ -51,7 +52,7 @@ class HugHitosIvTest(unittest.TestCase):
         self.assertEqual(result.data, 2)
 
     def test_get_one(self):
-        """Devuelve el numero de hitos."""
+        """Devuelve el hito indicado como parámetro."""
         result0 = hug.test.get(hhitos, '/get/%d' % 0)
         result1 = hug.test.get(hhitos, '/get/%d' % 1)
 
