@@ -3,6 +3,7 @@ import hug
 import hitos_iv
 
 json_path = '../data/hitos.json'
+hitos_iv_json = hitos_iv.read_json(json_path)
 
 
 @hug.get('/')
@@ -20,12 +21,10 @@ def get_all():
 @hug.get('/number')
 def milestone_number():
     """Return all milestones."""
-    milestones = hitos_iv.read_json(json_path)
-    return hitos_iv.milestone_number(milestones)
+    return hitos_iv.milestone_number(hitos_iv_json)
 
 
 @hug.get('/get/{id}')
 def get_one(id: int):
     """Return one milestone."""
-    milestones = hitos_iv.read_json(json_path)
-    return hitos_iv.get_milestone(milestones, id)
+    return hitos_iv.get_milestone(hitos_iv_json, id)
